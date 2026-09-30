@@ -1259,3 +1259,15 @@ input, textarea, select { font: inherit; color: inherit; }
     .author-card { grid-template-columns: 1fr; text-align: center; }
     .author-card img { margin: 0 auto; }
 }
+
+/* ===== City Square team cards ===== */
+.team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 26px; max-width: 1100px; margin: 0 auto; }
+.team-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: border-color 0.4s var(--ease); }
+.team-card:hover { border-color: var(--border-strong); }
+.team-card img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; display: block; }
+.team-card .body { padding: 30px 30px 34px; }
+.team-card h3 { font-size: 26px; margin-bottom: 6px; }
+.team-card .title { color: var(--gold); font-size: 13px; letter-spacing: 0.12em; }
+.team-card .role { color: var(--fg-dim); font-size: 14px; margin: 4px 0 16px; }
+.team-card p { color: var(--fg-muted); font-size: 15.5px; line-height: 1.75; margin-bottom: 12px; }
+.team-card .profile-links { margin-top: 18px; }
